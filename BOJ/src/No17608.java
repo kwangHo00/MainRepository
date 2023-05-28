@@ -1,4 +1,4 @@
-//No17608_막대기
+//No17608_막대기_정답
 import java.io.*;
 public class No17608 {
 
