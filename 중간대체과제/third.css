@@ -1,0 +1,127 @@
+@import url(./common.css);
+
+/* tab1시작 */
+.tab1_con .character div {
+    margin: 0 auto;
+}
+.tab1_con .character div[class] {
+    width: 80%;
+}
+.tab1_con .character img {
+    width: 100%;
+    border-radius: 10px 10px 0 0;
+    display: block;
+}
+.tab1_con .contentsAccordion > div {
+    margin: 40px 0;
+}.tab1_con .contentsAccordion > div p{
+    padding: 0 20px;
+    font-size: 16px;
+    text-align: center;
+}
+.tab1_con .contentsAccordion > div label{
+    padding: 15px 0;
+    display: block;
+    color:rgb(32, 30, 29);
+    cursor: pointer;
+    text-align: center;
+    border: 1.5px solid rgba(179, 173, 173, 0.5);
+    border-radius: 0 0 10px 10px;
+    /* border-top: none; */
+}
+.tab1_con .contentsAccordion > div label span{
+    font-size: 18px;
+    font-family: 'Jua', sans-serif;
+}
+.tab1_con .contentsAccordion > div label span:after{
+    content: "\f107";
+    font-family: "FontAwesome";
+    margin-left: 5px;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.tab1_con .contentsAccordion > div div {
+    height: 0px;
+    transition: all .6s;
+    overflow: scroll;
+    background-color: rgb(248, 245, 241);
+    font-size: 11px;
+    font-family: 'Jua', sans-serif;
+    display: flex;
+    align-items: center;
+}
+
+.tab1_con .contentsAccordion input[id*=item]:checked  + img + div{
+    height: 180px;
+}
+.tab1_con .contentsAccordion input[id*=item]:checked + img + div + label span:after{
+    content: "\f106";
+    font-family: "FontAwesome";
+}
+/* tab1끝 */
+
+
+
+/* tab2시작 */
+.tab2_con > div {
+    margin: 50px 0;
+}
+.tab2_con h3{
+    font-family: 'Do Hyeon', sans-serif;
+    font-size: 35px;
+    color: #01013f;
+}
+.tab2_con .slideCon{
+    margin: 20px 0 80px 0;
+}
+.tab2_con .slider {
+    display: flex;
+    overflow: auto;
+    padding: 0 15px;
+    padding-left: 5px;
+}
+.tab2_con .img {
+    flex: none;
+    width: 40%;
+    margin: 0 5px;
+}
+.tab2_con .img img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+}
+.tab2_con .slider::-webkit-scrollbar {
+    display: none;
+}
+/* tab2끝 */
+
+
+
+
+
+
+/* 작품 tab 버튼 효과 */
+.fa-tv {
+    animation: pulse 1s ease-in infinite;
+}
+@keyframes pulse{
+    25%  {transform: scale(0.8);}
+    75%  {transform: scale(1.1);}
+}
+
+
+
+
+/* 모바일 가로, 테블릿 세로 (해상도 480px ~ 767px)*/ 
+@media all and (min-width:480px) and (max-width:767px) {
+    .tab2_con .img{
+        width: 20%;
+    }
+
+    .character .contentsAccordion > div {
+        width: 60%;
+        margin: 40px auto;
+    }
+}

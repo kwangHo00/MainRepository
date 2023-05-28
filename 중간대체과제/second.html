@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>k-Beauty</title>
+    <link rel="stylesheet" href="./second.css">
+    <script src="https://kit.fontawesome.com/f04a88374e.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+    <input type="radio" id="modalBtnClose1" name="modalInput">
+    <input type="radio" id="modalBtnClose2" name="modalInput">
+    <input type="radio" id="modalBtnClose3" name="modalInput">
+
+    <input type="radio" id="modalBtn1" name="modalInput">
+    <input type="radio" id="modalBtn2" name="modalInput">
+    <input type="radio" id="modalBtn3" name="modalInput">
+
+    <div class="modalDiv1">
+        <div class="modalCon">
+            <div>
+                <i class="fa-solid fa-pen-to-square"></i>
+            </div>
+            <div>
+                우리나라만의 독보적이고 자연스러운 색상과 사용감,
+                휴대성 등에서 주목 받으며 세계 뷰티 산업의 유행을 이끔
+            </div>
+            <div>
+                <span><a href="">더 알아보기</a></span>
+                <label for="modalBtnClose1">닫기</label>
+            </div>
+        </div>
+    </div>
+
+    <div class="modalDiv2">
+        <div class="modalCon">
+            <div>
+                <i class="fa-solid fa-thumbtack"></i>
+            </div>
+            <div>
+                우수한 품질을 보여주면서도 합리적인 가격을 제시하여
+                타 고급 브랜드에 비해 사용만족도가 높음
+            </div>
+            <div>
+                <span><a href="">더 알아보기</a></span>
+                <label for="modalBtnClose2">닫기</label>
+            </div>
+        </div>
+    </div>
+
+    <div class="modalDiv3">
+        <div class="modalCon">
+            <div>
+                <i class="fa-solid fa-paperclip"></i>
+            </div>
+            <div>
+                국내 뷰티 브랜드들은 케이스나 매장 인테리어처럼
+                브랜드마다 독특한 특징을 가지고 k-뷰티의 차별점을 만들어 냄
+            </div>
+            <div>
+                <span><a href="">더 알아보기</a></span>
+                <label for="modalBtnClose3">닫기</label>
+            </div>
+        </div>
+    </div>
+
+
+    
+    <!-- 제목, 메뉴바 -->
+    <div>
+        <header class="header">
+            <!-- 메인 페이지 제목 -->
+            <div class="title"> 
+                <a href="./mainPage.html"><h1>Korean Wave</h1></a>
+            </div>
+    
+            <div class="headerOption">
+                
+                <input type="radio" id="bar" name="icon">
+                <label for="bar"><i class="fa-solid fa-bars"></i></label>
+                
+                
+                <input type="radio" id="close" name="icon">
+                
+                <div class="menuList">
+                    <label for="close"><i class="fa-solid fa-xmark"></i></label>
+                    <ul class="mainUl">
+                        <li>
+                            <a href="./mainPage.html">
+                                <strong id="home">HOME</strong>
+                            </a>
+                        </li>
+                        <hr>
+                        <li>
+                            <a href="./mainPage.html">
+                                <strong>k-Pop</strong>
+                                <i class="fa-solid fa-angle-right" style="color: #104093;"></i>
+                            </a>
+                            
+                            <ul>
+                                <li>k-Pop 소개</li>
+                                <li>대표 그룹</li>
+                                <li>더 알아보기</li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="./second.html">
+                                <strong>k-Beauty</strong>
+                                <i class="fa-solid fa-angle-right" style="color: #104093;"></i>
+                            </a>
+                            <ul>
+                                <li>k-Beauty 소개</li>
+                                <li>대표 제품</li>
+                                <li>더 알아보기</li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="./third.html">
+                                <strong>k-Contents</strong>
+                                <i class="fa-solid fa-angle-right" style="color: #104093;"></i>
+                            </a>
+                            <ul>
+                                <li>k-Contents 소개</li>
+                                <li>대표 작품</li>
+                                <li>더 알아보기</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </header>
+    
+        <article class="article">
+            <!-- <div class="mainImgCon">
+                <img class="mainImg" src="./배경7.jpg" alt="">
+            </div> -->
+    
+            <div class="tab">
+                <input type="radio" id="tab1" name="tab" checked="checked">
+                <input type="radio" id="tab2" name="tab">
+                <input type="radio" id="tab3" name="tab">
+    
+                <div class="tab_option">
+                    <label class="tabLabel" for="tab1">
+                        <i class="fa-solid fa-house" style="color: #697bd3;"></i>
+                        소개
+                    </label>
+                    <label class="tabLabel" for="tab2">
+                        <i class="fa-solid fa-tag" style="color: #ff8a8a;"></i>
+                        제품
+                    </label>
+                    <label class="tabLabel" for="tab3">
+                        <i class="fa-solid fa-circle-info" style="color: #bbca44;"></i>
+                        정보
+                    </label>
+                </div>
+    
+    
+                <div class="tab_con">
+                    <div class="tab1_con" id="tab1">
+                        <div class="introduction">
+                            <div>
+                                <h3>k-Beauty</h3>
+                            </div>
+                            <div>
+                                <p>
+                                    <strong>k-Beauty</strong>는 세계적으로도 인기 있는
+                                    뷰티 <br> 문화의 중심지로, 특유의 고급스러운 디자인과 <br>
+                                    혁신적인 기술력으로 나아갑니다. <br> 지금바로 새로운 뷰티 트랜드와
+                                    제품을 찾아보세요.
+                                </p>
+                            </div>
+                            <div>
+                                <img class="subImg" src="./kBeauty_pc.jpeg" alt="">
+                            </div>                            
+                        </div>
+    
+
+                        <div class="character">
+                            <div>
+                                <div>
+                                    <label for="modalBtn1">
+                                        <i class="fa-solid fa-wand-magic-sparkles" style="color:rgb(187, 120, 187)"></i>
+                                        혁신적인 기술력
+                                    </label>
+                                </div>
+                                <div>
+                                    <span>#촉촉함</span>
+                                    <span>#가벼움</span>
+                                    <span>#효과굿</span>
+                                </div>
+                            </div>
+
+                            <div>
+                                <div>
+                                    <label for="modalBtn2">
+                                        <i class="fa-solid fa-won-sign" style="color: #FFD700;"></i>
+                                        저렴한 가격
+                                    </label>
+                                </div>
+                                <div>
+                                    <span>#할인</span>
+                                    <span>#합리적</span>
+                                    <span>#경제적</span>
+                                </div>
+                            </div>
+
+                            <div>
+                                <div>
+                                    <label for="modalBtn3">
+                                        <i class="fa-solid fa-store" style="color: rgb(29, 107, 29)"></i>
+                                        브랜드 컨셉
+                                    </label>
+                                </div>
+                                <div>
+                                    <span>#자연주의</span>
+                                    <span>#깨끗한</span>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    
+                    <!-- radio name을 처음에는 section1과 2를 같게 해서 1과 2의 페이지가 동시에 넘어감
+                    다중 체크를 가능하게 하기 위해서는 name을 다르게 하기-->
+                    <div class="tab2_con">
+                        <div>
+                            <div><h3>대표 브랜드 제품</h3></div>
+                            <div class="accordion">
+                                <input type="checkbox" id="item1">
+                                <label for="item1"><em>이니스프리</em></label>
+                                <div>
+                                    <ul>
+                                        <li>
+                                            <img src="./이니스프리엠플.jpg" alt="">
+                                            <a href="https://www.innisfree.com/kr/ko/ProductView.do?prdSeq=34505&catCd01=UA&catCd02=UALB&tp=1">
+                                                <span>레티놀 시카 흔적 앰플</span>
+                                                <div>상세정보</div>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <img src="이니스프리노세범.jpg" alt="">
+                                            <a href="https://www.innisfree.com/kr/ko/ProductView.do?prdSeq=34517&catCd01=UC&catCd02=UCDD&tp=1">
+                                                <span>노세범 미네랄 파우더</span>
+                                                <div>상세정보</div>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <img src="./이니스프리오일.jpg" alt="">
+                                            <a href="https://www.innisfree.com/kr/ko/ProductView.do?prdSeq=34616&catCd01=UA&catCd02=&tp=1">
+                                                <span>블랙티 유스 인행싱 오일</span>
+                                                <div>상세정보</div>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <img src="./이니스프리크림1.jpg" alt="">
+                                            <a href="https://www.innisfree.com/kr/ko/ProductView.do?prdSeq=20680">
+                                                <span>한란 인리치드 크림</span>
+                                                <div>상세정보</div>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                        
+                                <input type="checkbox" id="item2">
+                                <label for="item2"><em>미샤</em></label>
+                                <div>
+                                    <ul>
+                                        <li>
+                                            <img src="./미샤엠플.jpg" alt="">
+                                            <a href="https://www.ableshop.kr/product/goods/view-goods?goodsId=BO00113262">
+                                                <span>미샤 타임 레볼루션 나이트리페어 앰플 5X</span>
+                                                <div>상세정보</div>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <img src="./미샤토너.jpg" alt="">
+                                            <a href="https://www.ableshop.kr/product/goods/view-goods?goodsId=BO00084428">
+                                                <span>미샤 비타씨 플러스 안색 토너</span>
+                                                <div>상세정보</div>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <img src="./미샤에센스.jpg" alt="">
+                                            <a href="https://www.ableshop.kr/product/goods/view-goods?goodsId=BO00111376">
+                                                <span>미샤 타임 레볼루션 더 퍼스트 에센스</span>
+                                                <div>상세정보</div>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <img src="./미샤크림.jpg" alt="">
+                                            <a href="https://www.ableshop.kr/product/goods/view-goods?goodsId=BO00112474">
+                                                <span>미샤 타임 레볼루션 프라임스템100 크림</span>
+                                                <div>상세정보</div>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                        
+                                <input type="checkbox" id="item3">
+                                <label for="item3"><em>닥터지</em></label>
+                                <div>
+                                    <ul>
+                                        <li>
+                                            <img src="./레드블레미쉬.jpg" alt="">
+                                            <a href="https://www.oliveyoung.co.kr/store/goods/getGoodsDetail.do?goodsNo=A000000164615&dispCatNo=1000001000100090002&trackingCd=Result_1">
+                                                <span>닥터지 레드 블레미쉬 클리어 수딩 크림</span>
+                                                <div>상세정보</div>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <img src="./필링젤.jpg" alt="">
+                                            <a href="https://www.oliveyoung.co.kr/store/goods/getGoodsDetail.do?goodsNo=A000000162279&dispCatNo=1000001001000030001&trackingCd=Result_3">
+                                                <span>닥터지 브라이트닝 필링젤</span>
+                                                <div>상세정보</div>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <img src="./닥터지클렌징.jpg" alt="">
+                                            <a href="https://www.oliveyoung.co.kr/store/goods/getGoodsDetail.do?goodsNo=A000000151132&dispCatNo=1000001001000020001&trackingCd=Result_11_30">
+                                                <span>닥터지 그린딥 클렌징 오일</span>
+                                                <div>상세정보</div>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <img src="./닥터지스네일.jpg" alt="">
+                                            <a href="https://brand.naver.com/dr-g/products/8324637783">
+                                                <span>닥터지 블랙 스네일 크림</span>
+                                                <div>상세정보</div>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                        
+                                <input type="checkbox" id="item4">
+                                <label for="item4"><em>설화수</em></label>
+                                <div>
+                                    <ul>
+                                        <li>
+                                            <img src="./설화수1.jpg" alt="">
+                                            <a href="https://brand.naver.com/sulwhasoo/products/4958988928">
+                                                <span>설화수 윤조 에센스 6세대</span>
+                                                <div>상세정보</div>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <img src="./설화수옥용팩.jpg" alt="">
+                                            <a href="https://brand.naver.com/sulwhasoo/products/5114282170">
+                                                <span>설화수 옥용팩</span>
+                                                <div>상세정보</div>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <img src="./설화수쿠션.jpeg" alt="">
+                                            <a href="https://brand.naver.com/sulwhasoo/products/5586003553">
+                                                <span>설화수 퍼팩팅 쿠션</span>
+                                                <div>상세정보</div>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <img src="./설화수남성.jpg" alt="">
+                                            <a href="https://brand.naver.com/sulwhasoo/products/5036922043">
+                                                <span>설화수 남성 본윤 에센스</span>
+                                                <div>상세정보</div>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+    
+                    </div>
+    
+                    <div class="tab3_con">
+                        <div>
+                            <div>
+                                <iframe width="560" height="315" src="https://www.youtube.com/embed/GxGWWQgcr_k" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                            </div>
+        
+                            <div>
+                                <iframe width="560" height="315" src="https://www.youtube.com/embed/HIP8jToPPYo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                            </div>
+                        </div>
+    
+    
+                        <div class="nav">
+                            <i class="fa-solid fa-desktop"></i>
+                            <span>관련 사이트</span>
+                            <ul>
+                                <li><a href="https://www.oliveyoung.co.kr/store/main/main.do?oy=0">올리브영</a></li>
+                                <li><a href="http://k-beauty.or.kr/">k뷰티산업협회</a></li>
+                                <li><a href="https://www.hwahae.co.kr/">화해</a></li>
+                            </ul>
+                        </div>
+                    </div>
+    
+    
+                </div>
+            </div>
+        </article>
+    
+        <footer class="footer">
+            <div class="link">
+                <ul>
+                    <li>
+                        <a href="https://www.instagram.com/ " target="_blank"><img src="./인스타.png" alt=""></a>
+                    </li>
+                    <li>
+                        <a href="https://www.hs.ac.kr/kor/index.do" target="_blank"><img src="./한신대.png" alt=""></a>
+                    </li>
+                </ul>
+            </div>
+            <div>
+                <span>
+                    Copyright &copy; 2023 Computer Science, Lee KwangHo
+                </span>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>

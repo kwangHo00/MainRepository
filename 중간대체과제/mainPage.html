@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>k-Pop</title>
+    <link rel="stylesheet" href="./mainPage.css">
+    <!-- Fontawesome에서 cdn 방식으로 아이콘 불러오기 -->
+    <script src="https://kit.fontawesome.com/f04a88374e.js" crossorigin="anonymous"></script>
+    
+</head>
+<body>
+    <!-- 제목, 메뉴바 -->
+    <header class="header">
+        <!-- 메인 페이지 제목 -->
+        <div class="title">
+            <a href="./mainPage.html"><h1>Korean Wave</h1></a>
+        </div>
+
+        <div class="headerOption">
+            
+            <input type="radio" id="bar" name="icon">
+            <label for="bar"><i class="fa-solid fa-bars"></i></label>
+            
+            
+            <input type="radio" id="close" name="icon">
+            
+            <div class="menuList">
+                <label for="close"><i class="fa-solid fa-xmark"></i></label>
+                <ul class="mainUl">
+                    <li>
+                        <a href="./mainPage.html">
+                            <strong id="home">HOME</strong>
+                        </a>
+                    </li>
+                    <hr>
+                    <li>
+                        <a href="./mainPage.html">
+                            <strong>k-Pop</strong>
+                            <i class="fa-solid fa-angle-right" style="color: #104093;"></i>
+                        </a>
+                        
+                        <ul>
+                            <li>k-Pop 소개</li>
+                            <li>대표 그룹</li>
+                            <li>더 알아보기</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="./second.html">
+                            <strong>k-Beauty</strong>
+                            <i class="fa-solid fa-angle-right" style="color: #104093;"></i>
+                        </a>
+                        <ul>
+                            <li>k-Beauty 소개</li>
+                            <li>대표 제품</li>
+                            <li>더 알아보기</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="./third.html">
+                            <strong>k-Contents</strong>
+                            <i class="fa-solid fa-angle-right" style="color: #104093;"></i>
+                        </a>
+                        <ul>
+                            <li>k-Contents 소개</li>
+                            <li>대표 작품</li>
+                            <li>더 알아보기</li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+    </header>
+    
+    <article class="article">
+        <!-- <div class="mainImgCon">
+            <img class="mainImg" src="./배경1.jpg" alt="">
+        </div> -->
+
+        <div class="tab">
+            <input type="radio" id="tab1" name="tab" checked="checked">
+            <input type="radio" id="tab2" name="tab">
+            <input type="radio" id="tab3" name="tab">
+
+            <div class="tab_option">
+                <label class="tabLabel" for="tab1">
+                    <i class="fa-solid fa-house" style="color: #697bd3;"></i>
+                    소개
+                </label>
+                <label class="tabLabel" for="tab2">
+                    <i class="fa-solid fa-headphones" style="color: #871778;"></i>
+                    그룹
+                </label>
+                <label class="tabLabel" for="tab3">
+                    <!-- <i class="fa-solid fa-circle-plus" style="color: #bbca44;"></i> -->
+                    <i class="fa-solid fa-circle-info" style="color: #bbca44;"></i>
+                    정보
+                </label>
+            </div>
+                
+                
+            <div class="tab_con">
+                <div class="tab1_con"   id="tab1">
+                    <div class="introduction">
+                        <div>
+                            <h3>k-Pop</h3>
+                        </div>
+                        <div>
+                            <p>
+                                <strong>k-Pop</strong>은 한국을 대표하는 뮤직 장르로, <br>
+                                대중적인 팝 스타일과 독특한 한국적인 요소로 <br>
+                                조화를 이루고 있습니다. 다양한 장르와 퍼포먼스로 <br> 
+                                전 세계의 팬을 사로잡은 k-Pop의 매력을 느껴보세요.
+                            </p>
+                        </div>
+                        <div>
+                            <img class="subImg" src="./bts_모바일.jpeg" alt="">
+                        </div>
+                    </div>
+
+                    <div class="character">
+                        <div>
+                            <h3>k-Pop의 특징</h3>
+                        </div>
+
+                        <div class="cha1">
+                            <img class="icon" src="./글로벌아이콘.png" alt="">
+                            <p>
+                                <span><strong>글로벌 팬</strong></span> <br>
+                                k-Pop은 전 세계 다양한 국가에 진출한 만큼 수 많은 글로벌 팬을 보유하고 있음
+                            </p>
+                        </div>
+
+                        <div class="cha2">
+                            <img src="./앨범아이콘.png" alt="">
+                            <p>
+                                <span><strong>앨범</strong></span><br>
+                                앨범뿐만 아니라 포토북, 포토카드 등으로 팬들에게 시각적 흥미와 구매력을 이끌어냄
+                            </p>
+                        </div>
+
+                        <div class="cha3">
+                            <img src="./패션아이콘.png" alt="">
+                            <p>
+                                <span><strong>패션</strong></span><br>
+                                세련되고 때로는 과감한 패션으로 많은 사람들의 눈을 사로잡고 있음
+                            </p>
+                        </div>
+
+                        <div class="cha4">
+                            <img src="./캠코더아이콘.png" alt="">
+                            <p>
+                                <span><strong>뮤직비디오</strong></span><br>
+                                화려하고 영상미가 좋은 뮤직 비디오로 수 많은 팬을 영상으로도 눈을 즐겁게 함
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- radio name을 처음에는 section1과 2를 같게 해서 1과 2의 페이지가 동시에 넘어감
+                다중 체크를 가능하게 하기 위해서는 name을 다르게 하기-->
+                <div class="tab2_con">
+                    <div>
+                        <div><h3>~ 2010</h3></div>
+                        <div class="section1">
+                            <input type="radio" name="slide1" id="slide01" checked>
+                            <input type="radio" name="slide1" id="slide02">
+                            <input type="radio" name="slide1" id="slide03">
+                            <div class="slide-wrap1">
+                                <ul class="slidelist1">
+                                    <li>
+                                        <a>
+                                            <!-- <label for="slide03" class="left"></label> -->
+                                            <div class="textbox">
+                                                <h3>2PM</h3>
+                                                <p>JYP 엔터테인먼트 소속의 6인조 그룹</p>
+                                            </div>
+                                            <img src="./투피엠.jpg">
+                                            <!-- <label for="slide02" class="right"></label> -->
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a>
+                                            <!-- <label for="slide01" class="left"></label> -->
+                                            <div class="textbox">
+                                                <h3>슈퍼주니어</h3>
+                                                <p>SM 엔터테인먼트 소속의 9인조 그룹</p>
+                                            </div>
+                                            <img src="./슈퍼주니어.jpg">
+                                            <!-- <label for="slide03" class="right"></label> -->
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a>
+                                            <!-- <label for="slide02" class="left"></label> -->
+                                            <div class="textbox">
+                                                <h3>소녀시대</h3>
+                                                <p>SM 엔터테인먼트 소속의 8인조 그룹</p>
+                                            </div>
+                                            <img src="./소녀시대.jpg">
+                                            <!-- <label for="slide01" class="right"></label> -->
+                                        </a>
+                                    </li>
+                                </ul>
+                                <div class="slide-control1">
+                                    <div class="control01">
+                                        <label for="slide03" class="left"><i class="fa-solid fa-arrow-left"></i></label>
+                                        <span>좌우로 넘겨보세요</span>
+                                        <label for="slide02" class="right"><i class="fa-solid fa-arrow-right"></i></label>
+                                    </div>
+                                    <div class="control02">
+                                        <label for="slide01" class="left"><i class="fa-solid fa-arrow-left"></i></label>
+                                        <span>좌우로 넘겨보세요</span>
+                                        <label for="slide03" class="right"><i class="fa-solid fa-arrow-right"></i></label>
+                                    </div>
+                                    <div class="control03">
+                                        <label for="slide02" class="left"><i class="fa-solid fa-arrow-left"></i></label>
+                                        <span>좌우로 넘겨보세요</span>
+                                        <label for="slide01" class="right"><i class="fa-solid fa-arrow-right"></i></label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div>
+                        <h3>~ 현재</h3>
+                        <div class="section2">
+                            <input type="radio" name="slide2" id="slide04" checked>
+                            <input type="radio" name="slide2" id="slide05">
+                            <input type="radio" name="slide2" id="slide06">
+                            <div class="slide-wrap2">
+                                <ul class="slidelist2">
+                                    <li>
+                                        <a>
+                                            <label for="slide06" class="left"></label>
+                                            <div class="textbox">
+                                                <h3>방탄소년단</h3>
+                                                <p>빅히트 뮤직 소속의 7인조 그룹</p>
+                                            </div>
+                                            <img src="./방탄소년단.jpg">
+                                            <label for="slide05" class="right"></label>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a>
+                                            <label for="slide04" class="left"></label>
+                                            <div class="textbox">
+                                                <h3>뉴진스</h3>
+                                                <p>하이브 소속의 5인조 그룹</p>
+                                            </div>
+                                            <img src="./뉴진스.png">
+                                            <label for="slide06" class="right"></label>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a>
+                                            <label for="slide05" class="left"></label>
+                                            <div class="textbox">
+                                                <h3>블랙핑크</h3>
+                                                <p>YG 엔터테인먼트 소속의 4인조 그룹</p>
+                                            </div>
+                                            <img src="./블랙핑크.jpg">
+                                            <label for="slide04" class="right"></label>
+                                        </a>
+                                    </li>
+                                </ul>
+                                <div class="slide-control2">
+                                    <div class="control01">
+                                        <label for="slide06" class="left"><i class="fa-solid fa-arrow-left"></i></label>
+                                        <span>좌우로 넘겨보세요</span>
+                                        <label for="slide05" class="right"><i class="fa-solid fa-arrow-right"></i></label>
+                                    </div>
+                                    <div class="control02">
+                                        <label for="slide04" class="left"><i class="fa-solid fa-arrow-left"></i></label>
+                                        <span>좌우로 넘겨보세요</span>
+                                        <label for="slide06" class="right"><i class="fa-solid fa-arrow-right"></i></label>
+                                    </div>
+                                    <div class="control03">
+                                        <label for="slide05" class="left"><i class="fa-solid fa-arrow-left"></i></label>
+                                        <span>좌우로 넘겨보세요</span>
+                                        <label for="slide04" class="right"><i class="fa-solid fa-arrow-right"></i></label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tab3_con">
+                    <div>
+                        <div>
+                            <iframe width="560" height="315" src="https://www.youtube.com/embed/nvBUHvEiTxQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                        </div>
+    
+                        <div>
+                            <iframe  src="https://www.youtube.com/embed/azj8aLqv_Vk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                        </div>
+                    </div>
+
+
+                    <div class="nav">
+                        <i class="fa-solid fa-desktop"></i>
+                        <span>관련 사이트</span>
+                        <ul>
+                            <li><a href="https://www.soompi.com/">Soompi</a></li>
+                            <li><a href="https://www.smtown.com/">Sm Town</a></li>
+                            <li><a href="https://www.jype.com/">JYP</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+    </article>
+    
+    <footer class="footer">
+        <div class="link">
+            <ul>
+                <li>
+                    <a href="https://www.instagram.com/ " target="_blank"><img src="./인스타.png" alt=""></a>
+                </li>
+                <li>
+                    <a href="https://www.hs.ac.kr/kor/index.do" target="_blank"><img src="./한신대.png" alt=""></a>
+                </li>
+            </ul>
+        </div>
+        <div>
+            <span>
+                Copyright &copy; 2023 Computer Science, Lee KwangHo
+            </span>
+        </div>
+    </footer>
+    
+
+</body>
+</html>

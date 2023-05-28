@@ -1,0 +1,290 @@
+@import url(./common.css);
+
+/* tab1시작 */
+.tab1_con .character {
+    /* notcommon */
+    display: flex;
+    overflow: auto;
+    padding: 0 20px;
+}
+.tab1_con .character::-webkit-scrollbar {
+    /* notcommon */
+    display: none;
+}
+.tab1_con .character > div {
+    /* notcommon */
+    background-color: rgba(255, 255, 255, 0.164);
+    margin: 20px 10px;
+    padding: 15px 0;
+    width: 60%;
+    flex: none;
+    border-radius: 10px;
+    box-shadow: rgba(100, 100, 111, 0.1) 10px 17px 20px 0px;
+    border: .3px solid rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items: center;
+}
+.tab1_con .character > div > div:nth-of-type(2){
+    /* notcommon */
+    margin-top: 5px;
+}
+.tab1_con .character div label {
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+}
+.tab1_con .character div label i {
+    font-size: 20px;
+    margin-right: 5px;
+    text-align: center;
+    vertical-align: center;
+    border: 1px solid;
+    padding: 5px;
+    border-radius: 50%;
+}
+.tab1_con .fa-wand-magic-sparkles {
+    background-color: rgba(187, 120, 187, 0.1);
+}
+.tab1_con .fa-won-sign{
+    background-color: rgba(255, 215, 0, 0.1);;
+}
+.tab1_con .fa-store{
+    background-color: rgba(29, 107, 29, 0.1);
+}
+.tab1_con .character div span {
+    font-size: 12px;
+    background-color:rgb(255, 249, 237);
+    padding: 3px;
+    border-radius: 2px;
+    font-family: 'Nanum Gothic', sans-serif;
+}
+/* tab1끝 */
+
+
+/* tab2시작 */
+.tab2_con .accordion {
+    width: 90%;
+    margin: 0 auto;
+    margin-bottom: 50px;
+}
+
+.tab2_con .accordion div ul img{
+    width: 100px;
+    border: 1px solid rgba(223, 211, 211, 0.5);
+    border-radius: 10px;
+    margin: 0 20px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.tab2_con .accordion ul li{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px 0;
+    background-color: rgba(243, 240, 234, 0.2);
+    padding: 15px 0;
+    border-radius: 15px;
+    border: 1px solid rgba(233, 221, 221, 0.5);
+}
+.tab2_con .accordion ul li a{
+    margin: 0 auto;
+    color: black;
+    text-decoration: none;
+    padding: 10px;
+    font-size: 18px;
+}
+.tab2_con .accordion ul li a span{
+    font-family: 'Jua', sans-serif;
+}
+.tab2_con .accordion ul li a div{
+    background-color: rgba(231, 235, 238, 0.5);
+    padding: 5px 0;
+    border-radius: 20px;
+    border: 1px solid rgba(233, 221, 221, 0.5);
+    font-size: 12px;
+    margin: 5px 0;
+    text-align: center;
+    vertical-align: middle;
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.05) 0px 8px 32px;
+}
+.tab2_con .accordion ul li a div:after{
+    content: "\f105";
+    font-family: "FontAwesome";
+    float: right;
+    margin-right: 10px;
+}
+
+.tab2_con .accordion input[id*="item"]{
+    display: none;
+}
+.tab2_con .accordion input[id*="item"] + label {
+    display: block;
+    padding: 20px;
+    color:rgb(190, 102, 70);
+    font-weight: 900;
+    cursor: pointer;
+    text-align: center;
+    border: 1px solid rgba(179, 173, 173, 0.3);
+    margin: 10px 0;
+    border-radius: 10px;
+    box-shadow: rgba(50, 50, 105, 0.15) 0px 2px 5px 0px, rgba(0, 0, 0, 0.05) 0px 1px 1px 0px;
+    
+}
+
+.tab2_con .accordion input[id*="item"] + label:before{
+    float: right;
+    content: '\f107';
+    font-family: "FontAwesome";
+    font-size: larger;
+}
+
+.tab2_con .accordion input[id*="item"] + label + div {
+    height: 0;
+    transition: all .6s;
+    overflow: scroll;
+    /* background-color: rgba(236, 236, 213, 0.4); */
+    font-size: 11px;
+}
+
+.tab2_con .accordion input[id*="item"]:checked + label{
+    box-shadow: none;
+}
+
+.tab2_con .accordion input[id*="item"]:checked + label + div{
+    height: 350px;
+    border-radius: 10px;
+}
+
+.tab2_con .accordion input[id*="item"]:checked +label:before{
+    content: '\f106';
+    font-family: "FontAwesome";
+}
+
+.tab2_con .accordion em{
+    visibility: hidden;
+}
+.tab2_con h3{
+    font-size: 35px;
+    font-family: 'Do Hyeon', sans-serif;
+    color: #01013f;
+}
+
+.tab2_con > div > div{
+    margin: 50px 0;
+}
+
+.tab2_con .accordion label:nth-of-type(1){
+    background-image: url(./이니스프리.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+.tab2_con .accordion label:nth-of-type(2){
+    background-image: url(./미샤로고.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+.tab2_con .accordion label:nth-of-type(3){
+    background-image: url(./닥터지.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+.tab2_con .accordion label:nth-of-type(4){
+    background-image: url(./설화수.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.fa-tag{
+	transform-origin: top center;
+	animation: swing 2s ease infinite;
+}
+@keyframes swing {
+	20% { transform: rotate(25deg); }	
+	40% { transform: rotate(-10deg); }
+	60% { transform: rotate(5deg); }	
+	80% { transform: rotate(-5deg); }	
+	100% { transform: rotate(0deg); }
+}
+
+
+
+
+
+
+/* 모달창 시작 */
+input[id*=modalBtn]{
+    display: none;
+}
+
+div[class*=modalDiv] {
+    position: relative;
+    background-color: rgba(0, 0, 0, .6);
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    display: none;
+    left: 0;
+    top: 0;
+    z-index: 20;
+}
+
+.modalCon{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    width: 300px;
+    height: 220px;
+    top: 50%;
+    left: 50%;
+    background-color: white;
+    margin-left: -150px;
+    margin-top: -110px;
+    border-radius: 15px;
+}
+.modalCon > div:first-child{
+    font-size: 20px;
+}
+.modalCon > div:nth-child(2){
+    width: 65%;
+    text-align: center;
+    line-height: 1.4;
+    margin: 10px 0 40px 0;
+    font-family: 'Nanum Gothic', sans-serif;
+
+}
+.modalCon span, .modalCon label {
+    margin: 0 10px;
+    border: 1px solid rgba(221, 218, 218, 0.637);
+    padding: 10px;
+    border-radius: 5px;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-weight: 900;
+}
+.modalCon a{
+    text-decoration: none;
+    color: black;
+}
+.modalCon label {
+    background-color: rgb(60, 168, 107);
+    color: white;
+}
+
+body input:nth-of-type(4):checked ~ .modalDiv1,
+body input:nth-of-type(5):checked ~ .modalDiv2,
+body input:nth-of-type(6):checked ~ .modalDiv3{
+    display: block;
+}
+
+body input:nth-of-type(1):checked ~ .modalDiv1,
+body input:nth-of-type(2):checked ~ .modalDiv2,
+body input:nth-of-type(3):checked ~ .modalDiv3{
+    display: none;
+}
+/* 모달창 끝 */

@@ -1,0 +1,209 @@
+@import url(./common.css);
+
+/* tab1시작 */
+.tab1_con .character div[class*=cha]{
+    /* notcommon */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 60px 0;
+}
+.tab1_con .character div[class*=cha] p{
+    /* notcommon */
+    margin-top: 20px;
+    line-height: 1.6;
+}
+.tab1_con .character div p{
+    width: 50%;
+    font-family: 'Jua', sans-serif;
+}
+.tab1_con .character div p span{
+    font-size: 20px;
+    color: rgb(15, 10, 44);
+}
+/* tab1끝 */
+
+
+
+/* tab2 시작 */
+.tab2_con h3{
+    font-size: 35px;
+    color: #01013f;
+    font-family: 'Do Hyeon', sans-serif;
+}
+
+.slidelist1, .slidelist2{
+    border-radius: 8px; 
+    width: 90%; margin: 0 auto;
+}
+.section1 input[id*="slide"],
+.section2 input[id*="slide"] {
+    display:none;
+}
+.section1 .slide-wrap1,
+.section2 .slide-wrap2 {
+    max-width:1200px;
+    margin:0 auto;
+}
+.section1 .slidelist1,
+.section2 .slidelist2 {
+    white-space:nowrap;
+    font-size:0;
+    overflow:hidden;
+}
+.section1 .slidelist1 > li,
+.section2 .slidelist2 > li {
+    display:inline-block;
+    vertical-align:middle;
+    width:100%;
+    transition:all .5s;
+}
+.section1 .slidelist1 > li > a,
+.section2 .slidelist2 > li > a {
+    display:block;
+    position:relative;
+}
+.section1 .slidelist1 > li > a img,
+.section2 .slidelist2 > li > a img {
+    width:100%;
+}
+.section1 .slidelist1 .textbox,
+.section2 .slidelist2 .textbox {
+    position:absolute;
+    z-index:1;
+    top:70%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    line-height:1.6;
+    text-align:center;
+}
+.section1 .slidelist1 .textbox h3,
+.section2 .slidelist2 .textbox h3 {
+    font-size:30px;
+    color:#31160d;
+    opacity:0;
+    transform:translateY(30px);
+    transition:all .5s;
+}
+.section1 .slidelist1 .textbox p,
+.section2 .slidelist2 .textbox p {
+    font-size:18px;
+    color:#31160d;
+    opacity:0;
+    transform:translateY(30px);
+    transition:all .5s;
+}
+
+.section1 .slidelist1 img, .section2 .slidelist2 img{
+    opacity: 0.8;
+}
+.section1 input[id="slide01"]:checked ~ .slide-wrap1 .slidelist1 > li,
+.section2 input[id="slide04"]:checked ~ .slide-wrap2 .slidelist2 > li {
+    transform:translateX(0%);
+}
+.section1 input[id="slide02"]:checked ~ .slide-wrap1 .slidelist1 > li,
+.section2 input[id="slide05"]:checked ~ .slide-wrap2 .slidelist2 > li {
+    transform:translateX(-100%);
+}
+.section1 input[id="slide03"]:checked ~ .slide-wrap1 .slidelist1 > li,
+.section2 input[id="slide06"]:checked ~ .slide-wrap2 .slidelist2 > li {
+    transform:translateX(-200%);
+}
+.section1 input[id="slide01"]:checked ~ .slide-wrap1 li:nth-child(1) .textbox h3,
+.section2 input[id="slide04"]:checked ~ .slide-wrap2 li:nth-child(1) .textbox h3 {
+    opacity:1;
+    transform:translateY(0);
+    transition-delay:.2s;
+}
+.section1 input[id="slide01"]:checked ~ .slide-wrap1 li:nth-child(1) .textbox p,
+.section2 input[id="slide04"]:checked ~ .slide-wrap2 li:nth-child(1) .textbox p {
+    opacity:1;
+    transform:translateY(0);
+    transition-delay:.4s;
+}
+.section1 input[id="slide02"]:checked ~ .slide-wrap1 li:nth-child(2) .textbox h3,
+.section2 input[id="slide05"]:checked ~ .slide-wrap2 li:nth-child(2) .textbox h3 {
+    opacity:1;
+    transform:translateY(0);
+    transition-delay:.2s;
+}
+.section1 input[id="slide02"]:checked ~ .slide-wrap1 li:nth-child(2) .textbox p,
+.section2 input[id="slide05"]:checked ~ .slide-wrap2 li:nth-child(2) .textbox p {
+    opacity:1;
+    transform:translateY(0);
+    transition-delay:.4s;
+}
+.section1 input[id="slide03"]:checked ~ .slide-wrap1 li:nth-child(3) .textbox h3,
+.section2 input[id="slide06"]:checked ~ .slide-wrap2 li:nth-child(3) .textbox h3 {
+    opacity:1;
+    transform:translateY(0);
+    transition-delay:.2s;
+}
+.section1 input[id="slide03"]:checked ~ .slide-wrap1 li:nth-child(3) .textbox p,
+.section2 input[id="slide06"]:checked ~ .slide-wrap2 li:nth-child(3) .textbox p {
+    opacity:1;
+    transform:translateY(0);
+    transition-delay:.4s;
+}
+
+.section1 .slide-control1 [class*="control"],
+.section2 .slide-control2 [class*="control"] {display:none;}
+.section1 [id="slide01"]:checked ~ .slide-wrap1 .control01,
+.section2 [id="slide04"]:checked ~ .slide-wrap2 .control01 {display:block;}
+.section1 [id="slide02"]:checked ~ .slide-wrap1 .control02,
+.section2 [id="slide05"]:checked ~ .slide-wrap2 .control02 {display:block;}
+.section1 [id="slide03"]:checked ~ .slide-wrap1 .control03,
+.section2 [id="slide06"]:checked ~ .slide-wrap2 .control03 {display:block;}
+
+.section1 .control01,
+.section1 .control02,
+.section1 .control03,
+.section2 .control01,
+.section2 .control02,
+.section2 .control03{
+    margin-top: 10px;
+}
+
+.section1 .control01 span,
+.section1 .control02 span,
+.section1 .control03 span,
+.section2 .control01 span,
+.section2 .control02 span,
+.section2 .control03 span {
+    font-size: 18px;
+    margin: 0 10px;
+    font-family: 'Sunflower', sans-serif;
+}
+.section1 .control01 i,
+.section1 .control02 i,
+.section1 .control03 i,
+.section2 .control01 i,
+.section2 .control02 i,
+.section2 .control03 i {
+    font-size: 26px;
+    animation: shake 4s ease infinite;
+}
+/* 슬라이드 이미지 하단 슬라이드 버튼 효과 */
+@keyframes shake {
+    0%, 100% {transform: translateX(0);}
+    10%, 30%, 50%, 70%, 90% {transform: translateX(-3px);}
+    0%, 40%, 60%, 80% {transform: translateX(3px);}
+}
+
+.tab2_con > div > div{
+    margin: 50px 0;
+}
+/* tab2 끝 */
+
+
+
+/* tab버튼 효과 */
+.fa-headphones {
+    animation: gelatine 0.5s infinite;
+}
+@keyframes gelatine {
+    from, to { transform: scale(1, 1); }
+    25% { transform: scale(0.9, 1.2); }
+    50% { transform: scale(1.2, 0.9); }
+    75% { transform: scale(0.95, 1.05); }
+ }

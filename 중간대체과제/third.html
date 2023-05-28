@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>k-Contents</title>
+    <link rel="stylesheet" href="./third.css">
+    <script src="https://kit.fontawesome.com/f04a88374e.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header class="header">
+        <!-- 메인 페이지 제목 -->
+        <div class="title">
+            <a href="./mainPage.html">
+                <h1>Korean Wave</h1>
+            </a>
+        </div>
+
+        <div class="headerOption">
+            
+            <input type="radio" id="bar" name="icon">
+            <label for="bar"><i class="fa-solid fa-bars"></i></label>
+            
+            
+            <input type="radio" id="close" name="icon">
+            
+            <div class="menuList">
+                <label for="close"><i class="fa-solid fa-xmark"></i></label>
+                <ul class="mainUl">
+                    <li>
+                        <a href="./mainPage.html">
+                            <strong id="home">HOME</strong>
+                        </a>
+                    </li>
+                    <hr>
+                    <li>
+                        <a href="./mainPage.html">
+                            <strong>k-Pop</strong>
+                            <i class="fa-solid fa-angle-right" style="color: #104093;"></i>
+                        </a>
+                        
+                        <ul>
+                            <li>k-Pop 소개</li>
+                            <li>대표 그룹</li>
+                            <li>더 알아보기</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="./second.html">
+                            <strong>k-Beauty</strong>
+                            <i class="fa-solid fa-angle-right" style="color: #104093;"></i>
+                        </a>
+                        <ul>
+                            <li>k-Beauty 소개</li>
+                            <li>대표 제품</li>
+                            <li>더 알아보기</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="./third.html">
+                            <strong>k-Contents</strong>
+                            <i class="fa-solid fa-angle-right" style="color: #104093;"></i>
+                        </a>
+                        <ul>
+                            <li>k-Contents 소개</li>
+                            <li>대표 작품</li>
+                            <li>더 알아보기</li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+    </header>
+
+    <article class="article">
+        <!-- <div class="mainImgCon">
+            <img class="mainImg" src="./배경1.jpg" alt="">
+        </div> -->
+
+        <div class="tab">
+            <input type="radio" id="tab1" name="tab" checked="checked">
+            <input type="radio" id="tab2" name="tab">
+            <input type="radio" id="tab3" name="tab">
+
+            <div class="tab_option">
+                <label class="tabLabel" for="tab1">
+                    <i class="fa-solid fa-house" style="color: #697bd3;"></i>
+                    소개
+                </label>
+                <label class="tabLabel" for="tab2">
+                    <i class="fa-solid fa-tv" style="color: #f2aa0d;"></i>
+                    작품
+                </label>
+                <label class="tabLabel" for="tab3">
+                    <i class="fa-solid fa-circle-info" style="color: #bbca44;"></i>
+                    정보
+                </label>
+            </div>
+                
+                
+            <div class="tab_con">
+                <div class="tab1_con" id="tab1">
+                    <div class="introduction">
+                        <div>
+                            <h3>k-Contents</h3>
+                        </div>
+                        <div>
+                            <p>
+                                <strong>k-Contents</strong>는 드라마, 영화, 예능, 웹툰처럼<br>
+                                다양한 장르의 콘텐츠를 제공합니다. <br> 세계 콘텐츠 시장의 중심이
+                                되어가는 k-Contents, <br> 언제 어디서나 새로운 콘텐츠를 만나보세요.
+                        </div>
+                        <div>
+                            <img class="subImg" src="./넷플릭스.jpg" alt="">
+                        </div>
+                    </div>
+
+                    <div class="character">
+                        <div>
+                            <h3>k-Contents 종류</h3>
+                        </div>
+
+                        <div class="contentsAccordion">
+                            <div>
+                                <input type="checkbox" id="item1">
+                                <img src="./영화.png" alt="">
+                                <div>
+                                    <p>
+                                        언어 장벽에도 불구하고 한국 영화와 드라마가
+                                        전 세계적으로 사랑받게 된 이유는
+                                        한국 현실을 콘텐츠 소재로 적극 활용하고, 공동체
+                                        판타지를 부각하며 인물 심리 묘사에 집중했기 때문이다.
+                                    </p>
+                                </div>
+                                <label for="item1">
+                                    <span>영화 / 드라마</span>
+                                </label>
+                            </div>
+
+                            <div>
+                                <input type="checkbox" id="item2">
+                                <img src="./예능.jpg" alt="">
+                                <div>
+                                    <p>
+                                        k-예능은 세계 시장에서도 독특한 포인트가 있고,
+                                        다양한 주제를 흥미롭게 담아낸다.
+                                        특히 빠른 진행과 세련된 연출 등에서 글로벌 경쟁력을
+                                        갖췄다는 평가를 받는다
+                                    </p>
+                                </div>
+                                <label for="item2">
+                                    <span>예능</span>
+                                </label>
+                            </div>
+
+                            <div>
+                                <input type="checkbox" id="item3">
+                                <img src="./웹툰.png" alt="">
+                                <div>
+                                    <p>
+                                        한국 웹툰은 다른 나라 웹툰 시장에 반해
+                                        일상, 개그, 직장, 대학, 판타지, 무협 등 다양한 소재와
+                                        폭넓은 장르를 구축하고 있어 더 인기를 끌고 있다.
+                                    </p>
+                                </div>
+                                <label for="item3">
+                                    <span>웹툰</span>
+                                </label>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- radio name을 처음에는 section1과 2를 같게 해서 1과 2의 페이지가 동시에 넘어감
+                다중 체크를 가능하게 하기 위해서는 name을 다르게 하기-->
+                <div class="tab2_con">
+                    <div>
+                        <div>
+                            <h3>영화 / 드라마</h3>
+                        </div>
+                        <div class="slideCon">
+                            <div class="slider">
+                                <div class="img">
+                                    <img src="./오징어게임.jpg">
+                                </div>
+                                <div class="img">
+                                    <img src="./우영우.jpg">
+                                </div>
+                                <div class="img">
+                                    <img src="./지우학.jpg">
+                                </div>
+                                <div class="img">
+                                    <img src="./카지노.jpeg">
+                                </div>
+                                <div class="img">
+                                    <img src="./수리남.jpg">
+                                </div>
+                                <div class="img">
+                                    <img src="./기생충.jpeg">
+                                </div>
+                                <div class="img">
+                                    <img src="./미나리.jpg">
+                                </div>
+                            </div>
+                        </div>
+    
+                        <div>
+                            <h3>예능</h3>
+                        </div>
+                        <div class="slideCon">
+                            <div class="slider">
+                                <div class="img">
+                                    <img src="./꽃보다할배.jpg">
+                                </div>
+                                <div class="img">
+                                    <img src="./피지컬100.jpg">
+                                </div>
+                                <div class="img">
+                                    <img src="./런닝맨.jpg">
+                                </div>
+                                <div class="img">
+                                    <img src="./솔로지옥.jpg">
+                                </div>
+                                
+                            </div>
+                        </div>
+    
+    
+    
+                        <div>
+                            <h3>웹툰</h3>
+                        </div>
+                        <div class="slideCon">
+                            <div class="slider">
+                                <div class="img">
+                                    <img src="./재혼황후.jpg">
+                                </div>
+                                <div class="img">
+                                    <img src="./지옥.jpg">
+                                </div>
+                                <div class="img">
+                                    <img src="./외모지상주의.jpg">
+                                </div>
+                                <div class="img">
+                                    <img src="./홈웹툰.jpg">
+                                </div>
+                                <div class="img">
+                                    <img src="./지우학웹툰.jpg">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                    
+
+
+                    
+
+                <div class="tab3_con">
+                    <div>
+                        <div>
+                            <iframe width="560" height="315" src="https://www.youtube.com/embed/33xnp8CignI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                        </div>
+    
+                        <div>
+                            <iframe width="560" height="315" src="https://www.youtube.com/embed/q0hWdGxxnqg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                        </div>
+                    </div>
+
+
+                    <div class="nav">
+                        <i class="fa-solid fa-desktop"></i>
+                        <span>관련 사이트</span>
+                        <ul>
+                            <li><a href="https://www.soompi.com/">Soompi</a></li>
+                            <li><a href="https://www.smtown.com/">Sm Town</a></li>
+                            <li><a href="https://www.jype.com/">JYP</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+    </article>
+    
+    <footer class="footer">
+        <div class="link">
+            <ul>
+                <li>
+                    <a href="https://www.instagram.com/ " target="_blank"><img src="./인스타.png" alt=""></a>
+                </li>
+                <li>
+                    <a href="https://www.hs.ac.kr/kor/index.do" target="_blank"><img src="./한신대.png" alt=""></a>
+                </li>
+            </ul>
+        </div>
+        <div>
+            <span>
+                Copyright &copy; 2023 Computer Science, Lee KwangHo
+            </span>
+        </div>
+    </footer>
+</body>
+</html>
