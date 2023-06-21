@@ -1,3 +1,4 @@
+package 그래프탐색;
 //No16948_데스나이트_정답
 import java.util.*;
 import java.io.*;

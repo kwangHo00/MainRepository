@@ -1,3 +1,4 @@
+package 수학;
 //No2577_숫자의개수_정답
 import java.io.*;
 public class No2577 {

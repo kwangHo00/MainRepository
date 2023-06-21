@@ -1,3 +1,4 @@
+package 수학;
 //No1929_소수구하기_두번째만에 정답_범위 밖의 값도 출력해서 출력 초과로 틀림
 import java.util.*;
 import java.io.*;

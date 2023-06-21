@@ -1,3 +1,4 @@
+package 정렬;
 //No10989_수정렬하기3_정답
 import java.util.*;
 import java.io.*;

@@ -1,3 +1,4 @@
+package 그래프탐색;
 //No14940_쉬운최단거리_정답
 import java.util.*;
 import java.io.*;
@@ -15,7 +16,7 @@ public class No14940 {
 		}
 	}
 	
-	static void dfs(int a, int b, int sizeN, int sizeM) {
+	static void bfs(int a, int b, int sizeN, int sizeM) {
 		queue.add(new Pair(a, b));
 		isVisited[a][b] = true;
 		
@@ -62,7 +63,7 @@ public class No14940 {
 			}
 		}
 		
-		dfs(targetN, targetM, n, m);
+		bfs(targetN, targetM, n, m);
 		
 		for(int i = 0; i < n; i++) {
 			for(int j = 0; j < m; j++) {

@@ -1,3 +1,4 @@
+package 그래프탐색;
 //No2638_치즈_3번째 만에 정답_처음 오답은 main으로 안바꾸고 제출해서 틀리고 두번째는 알고리즘 오류
 import java.util.*;
 import java.io.*;

@@ -1,4 +1,6 @@
+package 자료구조;
 //No17608_막대기_정답
+//알고리즘분류_자료구조_인데 자료구조 없이 그냥 풀었음
 import java.io.*;
 public class No17608 {
 

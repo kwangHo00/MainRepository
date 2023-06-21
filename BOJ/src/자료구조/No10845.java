@@ -1,3 +1,4 @@
+package 자료구조;
 //No10845_큐_정답
 import java.util.*;
 import java.io.*;

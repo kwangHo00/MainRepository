@@ -1,3 +1,4 @@
+package 그래프탐색;
 //No7576_토마토_정답
 import java.util.*;
 import java.io.*;
