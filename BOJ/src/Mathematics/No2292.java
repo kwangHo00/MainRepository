@@ -1,4 +1,4 @@
-package 수학;
+package Mathematics;
 //No2292_벌집_두번만에 정답_조건문을 잘못작성했음
 import java.io.*;
 public class No2292 {

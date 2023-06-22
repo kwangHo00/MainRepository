@@ -1,4 +1,4 @@
-package 그래프탐색;
+package Graph_Traversal;
 //No17086_아기상어2_두번째만에 정답
 import java.util.*;
 import java.io.*;

@@ -1,4 +1,4 @@
-package 그래프탐색;
+package Graph_Traversal;
 //No14940_쉬운최단거리_정답
 import java.util.*;
 import java.io.*;

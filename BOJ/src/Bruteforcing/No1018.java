@@ -1,4 +1,4 @@
-package 브루트포스_알고리즘;
+package Bruteforcing;
 //No1018_체스판다시칠하기_정답
 import java.io.*;
 import java.util.*;

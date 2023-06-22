@@ -1,4 +1,4 @@
-package 그래프탐색;
+package Graph_Traversal;
 //No2636_치즈_정답
 import java.util.*;
 import java.io.*;

@@ -1,4 +1,4 @@
-package 그래프탐색;
+package Graph_Traversal;
 //No3187_양치기꿍_정답
 import java.io.*;
 import java.util.*;

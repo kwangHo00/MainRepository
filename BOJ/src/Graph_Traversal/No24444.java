@@ -1,4 +1,4 @@
-package 그래프탐색;
+package Graph_Traversal;
 //No24444_알고리즘 수업-너비우선탐색1_시간 초과 해결을 못하겠음_4번만에 정답_arrayList와 linkedList의 성능 차이를 까먹어서 틀림
 //원소의 빠른 검색을 위해서는 arrayList가 linkedList보다 빠름 O(1) -> random access
 import java.util.*;

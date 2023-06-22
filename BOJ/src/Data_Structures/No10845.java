@@ -1,4 +1,4 @@
-package 자료구조;
+package Data_Structures;
 //No10845_큐_정답
 import java.util.*;
 import java.io.*;

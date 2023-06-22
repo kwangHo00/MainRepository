@@ -1,4 +1,4 @@
-package 수학;
+package Mathematics;
 //No2775_부녀회장이될테야_정답
 import java.io.*;
 public class No2775 {

@@ -1,4 +1,4 @@
-package 수학;
+package Mathematics;
 //No1037_약수_정답
 import java.io.*;
 import java.util.*;

@@ -1,4 +1,4 @@
-package 수학;
+package Mathematics;
 //No2525_오븐시계_두번만에 맞음_ 15번째 줄 뺏셈 순서 반대로 함
 import java.io.*;
 import java.util.*;

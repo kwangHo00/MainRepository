@@ -1,4 +1,4 @@
-package 그래프탐색;
+package Graph_Traversal;
 //No2178_미로탐색_정답
 import java.util.*;
 import java.io.*;

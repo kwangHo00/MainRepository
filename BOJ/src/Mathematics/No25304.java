@@ -1,4 +1,4 @@
-package 수학;
+package Mathematics;
 //No25304_영수증_두번째만에 정답_yes,no 대소문자 잘못써서 틀림
 import java.io.*;
 import java.util.*;

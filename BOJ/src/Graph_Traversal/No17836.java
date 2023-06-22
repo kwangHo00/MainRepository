@@ -1,4 +1,4 @@
-package 그래프탐색;
+package Graph_Traversal;
 //No17836_공주님을 구해라_두번째만에 정답
 import java.util.*;
 import java.io.*;
