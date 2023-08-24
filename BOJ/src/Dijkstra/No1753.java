@@ -15,7 +15,7 @@ public class No1753 {
 		@Override
 		public int compareTo(NodeInfo o) {
 			return this.c < o.c ? -1 : 1;
-		} 
+		}
 	}
 
 	public static void main(String[] args) throws IOException {
